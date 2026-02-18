@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Luxurious Roman;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    }
+
+body{
+    background-image: url(../assets/fondo.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.banner{
+    height: auto;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    gap: 20px;
+}
+
+.logo{ 
+    height: 3vw;
+    width: auto;
+}
+
+li{
+    list-style: none;
+}
+
+.list{
+    text-decoration: underline;
+    margin: 0.5em;
+}
+
+h1{
+    font-size: 3rem;
+    color: red;
+}
+
+h2{
+    font-size: 2rem;
+    color: red;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{ 
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+figcaption{
+    text-decoration: underline;
+    font-weight: bold
+}
+
+a{
+    color: blue;
+    text-decoration: none
+}
+
+img{
+    width: 30em;
+    height: auto;
+}
+
+.redes{
+    width: 3em;
+    height: auto;
+}
+
+.productos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rs{
+    display: flex;
+    gap: 20px;
+}
+
+.wa{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+@media (min-width: 300px) and (max-width: 479px) {
+    
+}
