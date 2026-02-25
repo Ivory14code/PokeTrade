@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="es-ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeTrade - Compra de Sellados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
+
 <body>
     <header>
         <a href="../index.html">
             <img src="../assets/Icono.webp" alt="Logo de PokeTrade de dos pokebolas siendo intercambiadas" class="logo">
         </a>
         <h1>PokeTrade</h1>
-        
+
         <nav>
             <ul class="navbar">
                 <li>
-                    <a href="../pages/comprayventa.html">Compra y Venta</a>
+                    <a href="../pages/compracartas.html">Compra Cartas</a>
                 </li>
                 <li>
                     <a href="../pages/comprasellados.html">Compra Sellados</a>
@@ -30,36 +34,104 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <img src="../assets/Baner.png" alt="Baner de PokeTrade con estadio de fondo" class="banner">
         <section>
-            <article>
-                <h2>Compra boosters Pokémon 100% sellados</h2>
-                <p>Viví la emoción de abrir un sobre nuevo o guardalo como inversión.</p>
-                <p>En Poketrade te ofrecemos productos originales, precintados y verificados, desde los sets clásicos hasta las últimas expansiones.</p>
-                <ul>
+            <article class="art1">
+                <h2 class="a1">Compra boosters Pokémon 100% sellados</h2>
+                <p class="a2">Viví la emoción de abrir un sobre nuevo o guardalo como inversión.</p>
+                <p class="a3">En Poketrade te ofrecemos productos originales, precintados y verificados, desde los sets
+                    clásicos hasta las últimas expansiones.</p>
+                <ul class="a5">
                     <li class="list">🔥 Sobres, cajas y sets oficiales</li>
                     <li class="list">🔒 Sellado original garantizado</li>
                     <li class="list">🚀 Envíos seguros y rápidos a todo el país.</li>
                 </ul>
-                <h3>El siguiente sobre podría tener a tu carta soñada… ¡atrápala antes de que otro lo haga!</h3> 
+                <h3 class="a4">El siguiente sobre podría tener a tu carta soñada… ¡atrápala antes de que otro lo haga!
+                </h3>
             </article>
             <article>
-                <h2>Cartas Disponibles JAP</h2>
-                <div class="productos">                  
-                    <img src="../assets/Booster JAP 151.webp" alt="Booster Pack 151 JAP">
-                    <figcaption>Booster 151 JAP - USD 15</figcaption>
-                    <img src="../assets/booster-box-mega-symphonia-1.webp" alt="Booster Box Mega Gardevoir JPN">
-                    <figcaption>Booster Box Mega Gardevoir JPN - USD 60</figcaption>
-                    <img src="../assets/booster-box-white-flare.webp" alt="Booster Box Llama Blanca JPN">
-                    <figcaption>Booster Box Llama Blanca JPN - USD 60</figcaption>
-                    <img src="../assets/booster-pack-mega-inferno-x-kr.webp" alt="Booster Pack Mega Infierno KR">
-                    <figcaption>Booster Pack Mega Infierno KR - USD 20</figcaption>
-                    <img src="../assets/booster-pack-prismatic-evolutions-en.webp" alt="Booster Pack Evoluciones Prismaticas ING">
-                    <figcaption>Booster Pack Evoluciones Prismaticas ING - USD 15</figcaption>
-                    <img src="../assets/booster-pack-the-glory-of-team-rocket.webp" alt="Booster Pack Gloria Rocket KR">
-                    <figcaption>Booster Pack Gloria Rocket KR - USD 20</figcaption>
+                <h2 class="titpro">Boosters Disponibles JAP</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../assets/Booster JAP 151.webp" class="card-img-top" alt="Booster Pack 151 JAP">
+                            <div class="card-body">
+                                <h5 class="card-title">Booster Pack 151</h5>
+                                <p class="card-text">Idioma Japones - Año 2023</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary"><a href="../pages/contacto.html"
+                                        class="card-link">USD 15</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../assets/booster-box-mega-symphonia-1.webp" class="card-img-top" alt="Booster Box Mega Gardevoir JPN">
+                            <div class="card-body">
+                                <h5 class="card-title">Booster Box Mega Gardevoir</h5>
+                                <p class="card-text">Idioma Japones - Año 2025</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary"><a href="../pages/contacto.html"
+                                        class="card-link">USD 60</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../assets/booster-box-white-flare.webp" class="card-img-top" alt="Booster Box Llama Blanca JPN">
+                            <div class="card-body">
+                                <h5 class="card-title">Booster Box Llama Blanca</h5>
+                                <p class="card-text">Idioma Japones - Año 2025</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary"><a href="../pages/contacto.html"
+                                        class="card-link">USD 60</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../assets/booster-pack-mega-inferno-x-kr.webp" class="card-img-top" alt="Booster Pack Mega Infierno KR">
+                            <div class="card-body">
+                                <h5 class="card-title">Booster Pack Mega Infierno</h5>
+                                <p class="card-text">Idioma Coreano - Año 2025</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary"><a href="../pages/contacto.html"
+                                        class="card-link">USD 20</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../assets/booster-pack-prismatic-evolutions-en.webp" class="card-img-top" alt="Booster Pack Evoluciones Prismaticas ING">
+                            <div class="card-body">
+                                <h5 class="card-title">Booster Pack Evoluciones Prismaticas</h5>
+                                <p class="card-text">Idioma Ingles - Año 2025</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary"><a href="../pages/contacto.html"
+                                        class="card-link">USD 15</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../assets/booster-pack-the-glory-of-team-rocket.webp" class="card-img-top" alt="Booster Pack Gloria Rocket KR">
+                            <div class="card-body">
+                                <h5 class="card-title">Booster Pack Gloria Rocket</h5>
+                                <p class="card-text">Idioma Coreano - Año 1999</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary"><a href="../pages/contacto.html"
+                                        class="card-link">USD 20</a></small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
@@ -97,6 +169,10 @@
                 </li>
             </ul>
         </nav>
-    </footer>   
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 </html>

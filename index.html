@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="es-ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeTrade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
     <header>
         <a href="./index.html">
-            <img src="./assets/Icono.webp" alt="Logo de PokeTrade de dos pokebolas siendo intercambiadas" class="logo"> 
+            <img src="./assets/Icono.webp" alt="Logo de PokeTrade de dos pokebolas siendo intercambiadas" class="logo">
         </a>
         <h1>PokeTrade</h1>
-        
+
         <nav>
             <ul class="navbar">
                 <li>
-                    <a href="./pages/comprayventa.html">Compra y Venta</a>
+                    <a href="./pages/compracartas.html">Compra Cartas</a>
                 </li>
                 <li>
                     <a href="./pages/comprasellados.html">Compra Sellados</a>
@@ -30,53 +34,110 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <img src="./assets/Baner.png" alt="Baner de PokeTrade con estadio de fondo" class="banner">
-        <section> 
-            <article>
-                <h2>¡Bienvenido al mundo Pokémon!</h2>
-                <p>Descubrí el lugar donde cada sobre es una aventura y cada carta puede ser una leyenda.</p>
-                <p> En nuestra tienda vas a encontrar cartas Pokémon originales, desde las clásicas de la primera generación hasta las más recientes expansiones de Scarlet & Violet.</p>
-                <h3>¡Conseguí esa carta que te falta y completá tu Pokédex hoy mismo!</h3>
-                <ul>
-                    <li class="list">💥 Cartas individuales, sobres, cajas selladas: todo lo que necesitás para coleccionar o competir.</li>
+        <section>
+            <article class="art1">
+                <h2 class="a1">¡Bienvenido al mundo Pokémon!</h2>
+                <p class="a2">Descubrí el lugar donde cada sobre es una aventura y cada carta puede ser una leyenda.</p>
+                <p class="a3"> En nuestra tienda vas a encontrar cartas Pokémon originales, desde las clásicas de la
+                    primera generación hasta las más recientes expansiones de Scarlet & Violet.</p>
+                <h3 class="a4">¡Conseguí esa carta que te falta y completá tu Pokédex hoy mismo!</h3>
+                <ul class="a5">
+                    <li class="list">💥 Cartas individuales, sobres, cajas selladas: todo lo que necesitás para
+                        coleccionar o competir.</li>
                     <li class="list">🔥 Envíos a todo el país.</li>
                     <li class="list">✨ Autenticidad garantizada.</li>
                     <li class="list">🔍 Nuevas cartas cada semana.</li>
                 </ul>
             </article>
             <article>
-                <h3>¡Nuevos Productos!</h3>
-                <p>Ultimas cartas y boosters que se agregaron para completar tu coleccion! 
+                <h3 class="titpro">¡Nuevos Productos!</h3>
+                <p class="titpro">Ultimas cartas y boosters que se agregaron para completar tu coleccion!
                 </p>
-                <div class="productos">
-                    <h4>Nuevas Cartas</h4>
-                    <img src="./assets/carta1 JAP.webp" alt="Mischevous Pichu Graniph JPN">
-                    <figcaption>Pichu Mischevous - USD 120</figcaption>
-                    <img src="./assets/carta 2 JAP.webp" alt="Sylveon VMAX JPN">
-                    <figcaption>Sylveon VMAX - USD 180</figcaption>
-                    <img src="./assets/carta 4.webp" alt="Surfing Pikachu ING">
-                    <figcaption>Pikachu Surfing - USD 100</figcaption>
+                <h2 class="titpro">Nuevas Cartas</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="./pages/compracartas.html">
+                                <img src="./assets/carta1 JAP.webp" class="card-img-top"
+                                    alt="Mischevous Pichu Graniph JPN">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mischevous Pichu Graniph JPN</h5>
+                                    <p class="card-text">Expanción Oxidean Flames 2022 - Grado 10</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="./pages/compracartas.html">
+                                <img src="./assets/carta 2 JAP.webp" class="card-img-top" alt="Sylveon VMAX JPN">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sylveon VMAX JPN</h5>
+                                    <p class="card-text">Expanción Cielos Evolutivos 2021 - Grado 10</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="./pages/compracartas.html">
+                                <img src="./assets/carta 4.webp" class="card-img-top" alt="Surfing Pikachu ING">
+                                <div class="card-body">
+                                    <h5 class="card-title">Surfing Pikachu ING</h5>
+                                    <p class="card-text">Expanción Evoluciones 2016 - Grado 10</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <a href="./pages/comprayventa.html">Compra y Venta</a>
-                <h4>Nuevos Boosters</h4>
-                <div class="productos">
-                    <img src="./assets/Booster JAP 151.webp" alt="Boster JAP 151">
-                    <figcaption>Booster 151 JAP - USD 15</figcaption>
-                    <img src="./assets/booster-box-mega-symphonia-1.webp" alt="Booster Box Mega Gardevoir JAP">
-                    <figcaption>Booster Box Mega Gardevoir JPN</figcaption>
-                    <img src="./assets/booster-box-white-flare.webp" alt="Booster Box Whith Flare JAP">
-                    <figcaption>Booster Box Llama Blanca JPN - USD 60</figcaption>
+                <h2 class="titpro">Nuevos Boosters</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="./pages/comprasellados.html">
+                                <img src="./assets/Booster JAP 151.webp" class="card-img-top" alt="Boster JAP 151">
+                                <div class="card-body">
+                                    <h5 class="card-title">Booster 151</h5>
+                                    <p class="card-text">Año 2023 - Idoma Japones</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="./pages/comprasellados.html">
+                                <img src="./assets/booster-box-mega-symphonia-1.webp" class="card-img-top"
+                                    alt="Booster Box Mega Gardevoir JAP">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caja Mega Gardevoir</h5>
+                                    <p class="card-text">Año 2025 - Idioma Japones</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="./pages/comprasellados.html">
+                                <img src="./assets/booster-box-white-flare.webp" class="card-img-top"
+                                    alt="Booster Box Whith Flare JAP">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caja Llama Blanca</h5>
+                                    <p class="card-text">Año 2025 - Idioma Japones</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <a href="./pages/comprasellados.html">Compra de Sellados</a>
             </article>
         </section>
     </main>
 
     <footer>
-        <h4>Derechos Resevados</h4>
-        <h4>Creado por Ivory</h4>
+        <h4 class="dr">Derechos Resevados</h4>
+        <h4 class="cr">Creado por Ivory</h4>
         <nav>
             <ul class="rs">
                 <li>
@@ -106,6 +167,11 @@
                 </li>
             </ul>
         </nav>
-    </footer>   
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
