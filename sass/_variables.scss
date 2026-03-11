@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+$fuente: Luxurious Roman;
+$rojo: red;
+$azul: blue;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente;
+}
+
+body{
+    background-image: url(../assets/fondo.jpg);
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    .banner{
+        height: auto;
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        margin: auto;
+    }
+}
+
+@mixin tablet{
+    @media (min-width: 480px) and (max-width: 959px ){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media (min-width: 300px) and (max-width: 479px){
+        @content;
+    }
+}
+
+@mixin flex($ai, $jc){
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+}
