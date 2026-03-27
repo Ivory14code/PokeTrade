@@ -8,30 +8,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="../assets/Icono.webp" alt="Logo de PokeTrade de dos pokebolas siendo intercambiadas" class="logo">
-        </a>
-        <h1 class="titulo">PokeTrade</h1>
 
-        <nav>
-            <ul class="navbar">
-                <li>
-                    <a href="../pages/compracartas.html">Compra Cartas</a>
-                </li>
-                <li>
-                    <a href="../pages/comprasellados.html">Compra Sellados</a>
-                </li>
-                <li>
-                    <a href="../pages/venta.html">Venta</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/Icono.webp" alt="Logo de PokeTrade de dos pokebolas siendo intercambiadas"
+                        class="logo">
+                </a>
+                <h1 class="titulo">PokeTrade</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/compracartas.html">Compra
+                                Cartas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/comprasellados.html">Compra Sellados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/venta.html">Venta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -39,20 +54,24 @@
         <img src="../assets/Baner.png" alt="Baner de PokeTrade con estadio de fondo" class="banner">
         <section>
             <article class="art1">
-                <h2 class="subtitulo">¡Dale nivel a tu colección!</h2>
-                <p class="parrafo1">En esta sección podés comprar y vender cartas Pokémon gradeadas con total confianza.</p>
-                <p class="parrafo2"> Cada carta está certificada por PSA 10 para que sepas exactamente qué estás comprando.
+                <h2 class="subtitulo fondo">¡Dale nivel a tu colección!</h2>
+                <p class="parrafo1 fondo">En esta sección podés comprar y vender cartas Pokémon gradeadas con total
+                    confianza.
                 </p>
-                <ul class="calidad">
+                <p class="parrafo2 fondo"> Cada carta está certificada por PSA 10 para que sepas exactamente qué estás
+                    comprando.
+                </p>
+                <ul class="calidad fondo">
                     <li class="list">✨Cartas gradeadas originales y verificadas.</li>
                     <li class="list">🔍Evaluación profesional para tus cartas.</li>
                     <li class="list">📦Pagos y envios asegurados a todo el país.</li>
                 </ul>
-                <h3 class="impronta">Para empezar a vender tus cartas haz clic <a href="./venta.html">aqui</a></h3>
+                <h3 class="impronta fondo">Para empezar a vender tus cartas haz clic <a href="./venta.html">aqui</a>
+                </h3>
             </article>
             <article>
-                <h2 class="titpro">Cartas Disponibles JAP</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <h3 class="titpro">Cartas Disponibles JAP</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="fade-up">
                     <div class="col">
                         <div class="card h-100">
                             <img src="../assets/carta1 JAP.webp" class="card-img-top" alt="Pichu Mischevous JAP">
@@ -61,7 +80,8 @@
                                 <p class="card-text">Expanción Oxidean Flames 2022 - Grado 10</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary"><a href="../pages/contacto.html" class="card-link">USD 120</a></small>
+                                <small class="text-body-secondary"><a href="../pages/contacto.html"
+                                        class="card-link">USD 120</a></small>
                             </div>
                         </div>
                     </div>
@@ -73,7 +93,8 @@
                                 <p class="card-text">Expanción Cielos Evolutivos 2021 - Grado 10</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary"><a href="../pages/contacto.html" class="card-link">USD 180</a></small>
+                                <small class="text-body-secondary"><a href="../pages/contacto.html"
+                                        class="card-link">USD 180</a></small>
                             </div>
                         </div>
                     </div>
@@ -85,7 +106,8 @@
                                 <p class="card-text">Expanción Cenit Supremo 2021 - Grado 10</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary"><a href="../pages/contacto.html" class="card-link">USD 80</a></small>
+                                <small class="text-body-secondary"><a href="../pages/contacto.html"
+                                        class="card-link">USD 80</a></small>
                             </div>
                         </div>
                     </div>
@@ -97,10 +119,11 @@
                                 <p class="card-text">Expanción Cenit Supremo 2021 - Grado 10</p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-body-secondary"><a href="../pages/contacto.html" class="card-link">USD 120</a></small>
+                                <small class="text-body-secondary"><a href="../pages/contacto.html"
+                                        class="card-link">USD 120</a></small>
                             </div>
                         </div>
-                </div>
+                    </div>
             </article>
         </section>
     </main>
@@ -142,6 +165,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

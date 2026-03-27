@@ -8,30 +8,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a href="./index.html">
-            <img src="./assets/Icono.webp" alt="Logo de PokeTrade de dos pokebolas siendo intercambiadas" class="logo">
-        </a>
-        <h1 class="titulo">PokeTrade</h1>
 
-        <nav>
-            <ul class="navbar">
-                <li>
-                    <a href="./pages/compracartas.html">Compra Cartas</a>
-                </li>
-                <li>
-                    <a href="./pages/comprasellados.html">Compra Sellados</a>
-                </li>
-                <li>
-                    <a href="./pages/venta.html">Venta</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/Icono.webp" alt="Logo de PokeTrade de dos pokebolas siendo intercambiadas"
+                        class="logo">
+                </a>
+                <h1 class="titulo">PokeTrade</h1>
+                <button class="navbar-toggler border border-warning" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation ">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/compracartas.html">Compra Cartas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/comprasellados.html">Compra Sellados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/venta.html">Venta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -39,12 +54,15 @@
         <img src="./assets/Baner.png" alt="Baner de PokeTrade con estadio de fondo" class="banner">
         <section>
             <article class="art1">
-                <h2 class="subtitulo">¡Bienvenido al mundo Pokémon!</h2>
-                <p class="parrafo1">Descubrí el lugar donde cada sobre es una aventura y cada carta puede ser una leyenda.</p>
-                <p class="parrafo2"> En nuestra tienda vas a encontrar cartas Pokémon originales, desde las clásicas de la
+                <h2 class="subtitulo fondo">¡Bienvenido al mundo Pokémon!</h2>
+                <p class="parrafo1 fondo">Descubrí el lugar donde cada sobre es una aventura y cada carta puede ser una
+                    leyenda.</p>
+                <p class="parrafo2 fondo"> En nuestra tienda vas a encontrar cartas Pokémon originales, desde las
+                    clásicas de
+                    la
                     primera generación hasta las más recientes expansiones de Scarlet & Violet.</p>
-                <h3 class="impronta">¡Conseguí esa carta que te falta y completá tu Pokédex hoy mismo!</h3>
-                <ul class="calidad">
+                <h3 class="impronta fondo">¡Conseguí esa carta que te falta y completá tu Pokédex hoy mismo!</h3>
+                <ul class="calidad fondo">
                     <li class="list">💥 Cartas individuales, sobres, cajas selladas: todo lo que necesitás para
                         coleccionar o competir.</li>
                     <li class="list">🔥 Envíos a todo el país.</li>
@@ -54,10 +72,10 @@
             </article>
             <article>
                 <h3 class="titpro">¡Nuevos Productos!</h3>
-                <p class="center">Ultimas cartas y boosters que se agregaron para completar tu coleccion!
+                <p class="titpro">Ultimas cartas y boosters que se agregaron para completar tu coleccion!
                 </p>
                 <h3 class="titpro">Nuevas Cartas</h3>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="fade-up">
                     <div class="col">
                         <div class="card h-100">
                             <a href="./pages/compracartas.html">
@@ -93,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="titpro">Nuevos Boosters</h2>
+                <h3 class="titpro">Nuevos Boosters</h3>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card h-100">
@@ -172,6 +190,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

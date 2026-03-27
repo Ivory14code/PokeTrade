@@ -1,2 +1,41 @@
 @use "variables" as v;
 
+.contacto {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    text-align: center;
+
+    .list {
+        list-style: none;
+        text-decoration: underline;
+        margin: 0.5em;
+    }
+}
+
+form {
+    background-color: v.$amarillo;
+
+}
+
+
+@include v.mobile {
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        map {
+            margin: 5px;
+            gap: 10px;
+        }
+
+        .list {
+            list-style: none;
+            text-decoration: underline;
+            margin-right: 50px;
+        }
+    }
+}

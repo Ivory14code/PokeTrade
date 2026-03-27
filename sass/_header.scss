@@ -1,56 +1,78 @@
 @use "variables" as v;
 
 header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // justify-items: center;
+    // align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+
     .logo {
         height: 3vw;
         width: auto;
     }
-    .titulo{    
+
+    .titulo {
         grid-column: 2 / 3;
         font-size: 3rem;
-        color: v.$rojo
+        color: v.$rojo;
     }
-    .navbar{
+
+    .navbar-collapse {
         @include v.flex(center, center);
         gap: 20px;
-        li{
+
+        li {
             list-style: none;
-            a{
-                color:v.$azul;
-                text-decoration: none
+
+            .active {
+                font-size: 3vb;
+                background-color: v.$amarillo;
+                border-radius: 20px;
+                padding: 1vb;
+            }
+
+            .nav-link{
+                color: black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
         }
     }
 
-    @include v.tablet{
+    @include v.tablet {
         display: flex;
         flex-direction: column;
-        .logo{
+
+        .logo {
             height: 10vh;
             width: auto;
         }
     }
 
-    @include v.mobile{
+    @include v.mobile {
         display: flex;
         flex-direction: column;
         font-size: 10px;
-        .logo{
+
+        .logo {
             height: 7vh;
             width: auto;
         }
+
         .titulo{
-            height: 7vh;
-            width: auto;
+            display: none;
         }
-        .navbar{
+
+        .navbar-toggler{
+            font-size: 3vb;
+        }
+
+        .navbar {
             font-size: 0.7rem;
         }
     }
